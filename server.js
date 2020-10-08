@@ -14,7 +14,7 @@ app.prepare()
         server.get('*', (req, res) => {
             return handle(req, res);
         });
-        server.listen(3001, (err) => {
+        server.listen(80, (err) => {
             if (err) {
                 throw err
             } else {
