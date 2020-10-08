@@ -1,0 +1,78 @@
+body {
+  background: #f1f1f1;
+}
+
+.main {
+  background: #f1f1f1;
+  padding: 8px;
+}
+
+.header > h4 {
+  text-align: left; 
+  padding: 12px;
+}
+
+.leftSidebar {
+  text-align: left;
+  background: #ffffff;
+  padding: 8px;
+}
+
+.block > h4 {
+  text-align: center;
+  margin-top: 12px;
+}
+
+.info {
+  padding-top: 12px!important;
+}
+
+.filter {
+  text-align: left;
+  padding: 10px!important;
+}
+
+.filter > a {
+  text-align: center; 
+  display: block; 
+  text-decoration: none;
+  color: #fff; 
+  background: #a3c36f; 
+  border-radius: 5px; 
+  padding: 5px;
+}
+
+.filter > a:focus {
+  background: #679222!important;
+}
+
+.data-block {
+  background: #fff; 
+  text-align: left; 
+  padding: 12px!important;
+}
+
+.logo {
+  text-align: center; 
+  background: #f1f1f1; 
+  border-radius: 5px; 
+  padding: 14px;
+  img {
+    width: 80%;
+  }
+}
+
+.mission-name {
+  color: #285e8e;
+}
+
+.info > li {
+  font-size: 12px; 
+  padding-top: 12px;
+}
+
+.footer-text {
+  background: #f1f1f1;
+  text-align: center!important;
+  padding: 30px!important;
+}
