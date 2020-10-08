@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import { baseUrl } from '../utils/data.json';
 import Layout from '../components/layouts/Layout';
 import DataView from '../components/data-view';
 import { prepareUrl } from '../utils/index';
@@ -22,7 +23,7 @@ const Year = props => {
 
 Year.getInitialProps = async context => {
     const url = prepareUrl(context.query);
-    let res = await axios.get(`https://api.spaceXdata.com/v3/launches?limit=100&${url}`);
+    let res = await axios.get(`${baseUrl}?limit=100&${url}`);
     return {
         data: res.data
     }

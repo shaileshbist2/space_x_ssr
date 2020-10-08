@@ -1,6 +1,5 @@
 import React from 'react';
 import Router, { useRouter } from 'next/router'
-import Link from "next/link";
 import { prepareUrl } from '../../utils/index';
 import { years, launch, landing } from '../../utils/data.json';
 import '../../styles/main.scss';
@@ -13,6 +12,7 @@ let query = {
 
 export const Header = (props) => {
     const router = useRouter();
+    query = {...router.query}
     function updateKey(key, p) {
         if (key === 'launch_year') {
             if (p === query.launch_year) {
@@ -40,7 +40,7 @@ export const Header = (props) => {
     return (
         <React.Fragment>
             <div className="col-12 header">
-                <h4>SpaceX Launch Programs</h4>
+                <h2>SpaceX Launch Programs</h2>
             </div>
             <div className="col-2 leftSidebar">
                 <div className="row">
@@ -53,7 +53,7 @@ export const Header = (props) => {
                         {
                             years.map((p, i) =>
                                 <div key={i} className="col-6 filter">
-                                    <a onClick={() => updateKey('launch_year', p)} style={{ cursor: "pointer" }}>
+                                    <a onClick={() => updateKey('launch_year', p)} style={{ cursor: "pointer", background: p === query["launch_year"] ? "#679222" : "#a3c36f" }}>
                                         {p}
                                     </a>
                                 </div>
@@ -70,7 +70,7 @@ export const Header = (props) => {
                         {
                             launch.map((p, i) =>
                                 <div key={i} className="col-6 filter">
-                                    <a href="#" onClick={() => updateKey('launch_success', p)}>
+                                    <a onClick={() => updateKey('launch_success', p)} style={{ cursor: "pointer", background: p === query["launch_success"] ? "#679222" : "#a3c36f" }}>
                                         {p}
                                     </a>
                                 </div>
@@ -87,7 +87,7 @@ export const Header = (props) => {
                         {
                             landing.map((p, i) =>
                                 <div key={i} className="col-6 filter">
-                                    <a onClick={() => updateKey('land_success', p)} style={{ cursor: "pointer" }}>
+                                    <a onClick={() => updateKey('land_success', p)} style={{ cursor: "pointer", background: p === query["land_success"] ? "#679222" : "#a3c36f" }}>
                                         {p}
                                     </a>
                                 </div>
