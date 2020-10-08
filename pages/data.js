@@ -22,7 +22,6 @@ const Year = props => {
 
 Year.getInitialProps = async context => {
     const url = prepareUrl(context.query);
-    console.log('browser_url ', url);
     let res = await axios.get(`https://api.spaceXdata.com/v3/launches?limit=100&${url}`);
     return {
         data: res.data

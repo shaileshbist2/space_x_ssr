@@ -34,8 +34,6 @@ export const Header = (props) => {
             }
         }
         const url = prepareUrl(query);
-        console.log('*** ', url);
-        // console.log(query);
         router.push('data/?' + url)
     }
 
