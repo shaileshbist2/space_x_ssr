@@ -18,9 +18,14 @@ body {
   padding: 8px;
 }
 
-.block > h4 {
-  text-align: center;
-  margin-top: 12px;
+.block {
+  h3 {
+    padding: 0!important;
+  }
+  h4 {
+    text-align: center;
+    margin-top: 12px;
+  }
 }
 
 .info {

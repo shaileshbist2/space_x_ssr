@@ -1,15 +1,25 @@
 # space_x_ssr
 
-# Installation
+## Installation
 $ npm install
 
-# Run Development ENV
+#### Run Development ENV
 $ npm run dev
 
-# Create Build
+#### Create Build
 $ npm run build
 
-# Run Production ENV
+#### Run Production ENV
 $ npm start
 
-# Demo Url
+### Server side render (Full Screen View)
+<img src="./utils/img/1.png" width="400" />
+
+### Mobile View
+<img src="./utils/img/3.png" width="200" />
+<img src="./utils/img/4.png" width="200" />
+
+### Tablet View
+<img src="./utils/img/2.png" width="400" />
+
+## Demo Url

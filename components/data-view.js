@@ -7,7 +7,7 @@ const DataView = props => {
                 props.props.data.map((p, i) =>
                     <div
                         key={i}
-                        className="col-3">
+                        className="col-3 col-md-6">
                         <div className="row data-block">
                             <div className="col-12 logo">
                                 <img src={p.links && p.links.mission_patch_small} />

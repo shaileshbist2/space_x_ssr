@@ -43,7 +43,7 @@ export const Header = (props) => {
                 <h2>SpaceX Launch Programs</h2>
             </div>
             <div className="col-2 leftSidebar">
-                <div className="row">
+                <div className="row" style={{padding: "8px"}}>
                     <div className="col-12 block">
                         <h3>Filters</h3>
                         <h4>Launch Year</h4>

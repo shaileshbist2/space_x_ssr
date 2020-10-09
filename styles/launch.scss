@@ -98,10 +98,19 @@
   }
   
   /* viewport <= 1000px */
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1024px) {
     * {
       font-size: 1em;
     }
+
+    .col-md-6 {
+      width: 50%;
+    }
+
+    .header > h2 {
+      font-size: 25px;
+    }
+
   }
   
   /* viewport <= 700px */
@@ -115,11 +124,23 @@
     .col-10 {
         width: 100%;
     }
+
+    .header > h2 {
+      font-size: 25px;
+    }
+
+    .block > h3 {
+      font-size: 20px;;
+    }
+
+    .row div {
+      padding: 6px;
+    }
   } 
   
-  /* viewport <= 500px */
-  @media screen and (max-width: 500px) {
-    * {
-      font-size: 0.9em;
-    }
-  }
+  // /* viewport <= 500px */
+  // @media screen and (max-width: 500px) {
+  //   * {
+  //     font-size: 0.9em;
+  //   }
+  // }
