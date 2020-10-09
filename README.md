@@ -22,4 +22,8 @@ $ npm start
 ### Tablet View
 <img src="./utils/img/2.png" width="400" />
 
+## Score
+<img src="./utils/img/performance_score.png" width="400" />
+
 ## Demo Url
+https://spacexssr2.herokuapp.com/
